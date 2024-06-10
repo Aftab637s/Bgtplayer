@@ -93,7 +93,8 @@ async def helper_cb(client, CallbackQuery, _):
     if cb == "hb9":
         if CallbackQuery.from_user.id not in SUDOERS:
             return await CallbackQuery.answer(
-                "𝐓𝐡𝐢𝐬 𝐁𝐮𝐭𝐭𝐨𝐧 𝐈𝐬 𝐎𝐧𝐥𝐲 𝐅𝐨𝐫 𝐒𝐮𝐝𝐨 𝐔𝐬𝐞𝐫'𝐬.", show_alert=True
+                "𝐓𝐡𝐢𝐬 𝐁𝐮𝐭𝐭𝐨𝐧 𝐈𝐬 𝐎𝐧𝐥𝐲 𝐅𝐨𝐫 𝐒𝐮𝐝𝐨 𝐔𝐬𝐞𝐫'𝐬 sub ke liye he but jo owner he usnehi ban kiya hua he kya batau
+                .", show_alert=True
             )
         else:
             await CallbackQuery.edit_message_text(
